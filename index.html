@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- My styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Title -->
+    <link rel="shortcut icon" href="images/capybara.png" type="image/x-icon">
+    <title>Carpi-Reader</title>
+</head>
+<body>
+    <div id="page-container">   <!-- container andr wrap for sticky footer-->
+        <div id="content-wrap">
+            <h1>Carpi-Readear</h1>
+            <hr>
+            <header>    <!-- header section-->
+                <section id="header__leftBtns">
+                    <button class="btn btn-secondary" id="navBar__analyze" data-view="analysis">Analizar <span>oculto</span></button>
+                    <button class="btn btn-secondary" id="navBar__logs" data-view="logs">Ver anteriores</button>
+                </section>
+                <section id="header__rightBtns">
+                    <button class="btn btn-danger" id="navBar__clear" data-view="clear">Borrar Historial</button>
+                </section>
+            </header>
+            <main>  <!-- main section -->
+                <section class="main__section" id="analysis">   <!-- new analysis section -->
+                    <div id="newAnalysis"> 
+                        <h2>Analizar texto</h2><br>
+                        <div class="getText__form">
+                            <textarea class="getText__textarea" id="textToAnalyze" rows="8" cols="100" placeholder="Ingrese el texto a analizar aquí..." required></textarea><br><br>
+                            <button class="btn btn-secondary btn-lg" type="submit" id="analyzeBtn"><b>Analizar</b></button>
+                        </div>
+                    </div>
+                    <ul id="textCounters"></ul> <!-- text counters sub-section-->
+                    <aside id="bienvenida"> <!-- welcome message sub-section-->
+                        <h3>Carpi-Reader</h3>
+                        <p>A very Carpincho-Friendly App</p>
+                        <a href="https://www.youtube.com/watch?v=n-pQnp0FAKI" target="_blank"><img src="images/seal.png" title="sitio web avalado por la Cámara Argentina de Carpinchos tomadores de mate"alt="sello de aprobación con la imagen de un carpincho"></a>
+                        <li>Analiza textos de forma 100% gratuita.</li>
+                        <li>¡Cuenta caracteres, palabras y mucho más en instantes!</li>
+                    </aside>
+                </section>
+                <section class="main__section" id="stats">  <!-- stats display section -->
+                    <h2 id="stats__title"></h2>
+                    <div id="stats__lists">
+                        <ul id="textWordStats"></ul>
+                        <ul id="textCharStats"></ul>
+                    </div>
+                </section>
+                <section class="main__section" id="logs"> <!-- logs entries section-->
+                    <h2>LOGS</h2>
+                    <div id="logs__list"></div>
+                </section>
+                <section class="main__section" id="fullText"> <!-- textarea displaying old log entry sub-section-->
+                    <h2>TEXTO ANALIZADO</h2>
+                    <textarea id="fullText__textarea"rows="8" cols="100" readonly></textarea>
+                    <div class="copyText__container">
+                        <div class="alert alert-primary" role="alert" id="fullText__alert"><img src="images/copy.png" alt="ícono de portapapeles"> &nbsp;<b>Texto copiado al portapapeles</b></div>
+                        <button class="btn btn-secondary bg-sm" id="fullText__btn">Copiar</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- footers -->
+        <footer id="footer__desktop">App desarrollada por <a href="https://github.com/locurin" target="_Blank">Locurin</a>. La información recopilada tiene fines meramente educativos.</footer>
+        <footer id="footer__mobile"><b>Desarrolado por <a href="https://github.com/locurin" target="_Blank">Locurin</a>.</b></footer>
+    </div>
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- my scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
