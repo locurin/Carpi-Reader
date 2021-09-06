@@ -5,15 +5,15 @@ Carpi-Reader is a web application designed for text analysis. It allows users to
 ## scope of funcionality
 
 Carpi-Reader, after receiving text input from user:
-    - Count total amount of paragraphs
-    - Count total amount of Sentences
-    - Count total amount of Words
-    - Count total amount of characters (without spaces)
-    - Count total amount of characters (including spaces)
-    - Return a list of all used words in the text, the amount of times every
+    * Count total amount of paragraphs
+    * Count total amount of Sentences
+    * Count total amount of Words
+    * Count total amount of characters (without spaces)
+    * Count total amount of characters (including spaces)
+    * Return a list of all used words in the text, the amount of times every
       word was used, and the percentage it represents out of 100% of text, ordered
       higher to lower.
-    - Return a list of all used letters (in order A-Z), the amount of times 
+    * Return a list of all used letters (in order A-Z), the amount of times 
       each word was used and the percentage it presents out of 100% of text.
 
 Every analysis done is locally saved in the browser storage, and users can access this log them from "Ver anteriores" section as many times as they wish while browser local storage wont be deleted. An option to manually delete log is also present in the UI to help users preserve their security and privacy.
