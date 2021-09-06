@@ -5,7 +5,7 @@ Carpi-Reader is a web application designed for text analysis. It allows users to
 ## scope of funcionality
 
 Carpi-Reader, after receiving text input from user:
-    * Count total amount of paragraphs
+    *Count total amount of paragraphs
     * Count total amount of Sentences
     * Count total amount of Words
     * Count total amount of characters (without spaces)
