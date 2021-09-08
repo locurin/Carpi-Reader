@@ -1,6 +1,6 @@
 # Carpi-Reader
 
-Carpi-Reader is a web application designed for text analysis. It allows users to input some text and get instant and precise data regarding that text. You can test it onlime at https://carpi-reader.000webhostapp.com
+Carpi-Reader is a web application designed for text analysis. It allows users to input some text and get instant and precise data regarding that text. You can test it online at https://carpi-reader.000webhostapp.com
 
 ## scope of funcionality
 
